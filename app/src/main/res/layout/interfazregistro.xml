@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+   >
+
+    <TextView
+        android:id="@+id/Reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro"
+        android:textSize="32dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:textSize="20dp"
+        android:layout_below="@+id/Im"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp" />
+     <EditText
+        android:id="@+id/EdN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/Name"
+        android:background="@android:color/darker_gray"
+        android:layout_alignEnd="@+id/Name"
+        android:layout_alignBottom="@+id/Name"
+        android:layout_alignStart="@+id/Reg" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido:"
+        android:textSize="20dp"
+        android:id="@+id/textView"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/Name"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/EdA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/EdN" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Nacimiento:"
+        android:textSize="20dp"
+        android:id="@+id/textView2"
+        android:layout_below="@id/EdA"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true" />
+
+   <EditText
+       android:id="@+id/EdD"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:hint="DD/MM/AAAA"
+       android:textSize="20dp"
+       android:background="@android:color/darker_gray"
+       android:layout_marginLeft="20dp"
+       android:layout_alignTop="@+id/textView2"
+       android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:id="@+id/Co"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo:"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp" />
+    <EditText
+        android:id="@+id/EdC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:background="@android:color/darker_gray"
+        android:layout_above="@+id/Us"
+        android:layout_alignEnd="@+id/EdA"
+        android:layout_alignStart="@+id/editText" />
+    <TextView
+        android:id="@+id/Us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario:"
+        android:textSize="20dp"
+        android:layout_below="@+id/Co"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:layout_alignTop="@+id/Us"
+        android:layout_alignStart="@+id/EdA"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/editText"
+        android:layout_toStartOf="@+id/Pun"
+        android:layout_alignEnd="@+id/EdA" />
+    <TextView
+        android:id="@+id/Pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña:"
+        android:textSize="20dp"
+        android:layout_below="@id/Us"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@+id/Tpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:background="@android:color/darker_gray"
+        android:layout_toRightOf="@id/Pass"
+        android:layout_below="@id/editText"
+        android:layout_marginTop="15dp"
+        android:layout_alignEnd="@+id/EdC"
+        android:layout_marginLeft="8dp"/>
+    <Button
+        android:id="@+id/B1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/Im"
+        android:layout_margin="5sp"/>
+    <Button
+        android:id="@+id/B2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_alignTop="@+id/B1"
+        android:layout_toEndOf="@+id/textView2" />
+    <ImageView
+        android:id="@+id/Im"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/usuario2"
+        android:layout_below="@+id/Reg"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/Sel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona foto de perfil"
+        android:textSize="20dp"
+        android:layout_above="@+id/Name"
+        android:layout_alignStart="@+id/B1" />
+    <Button
+        android:id="@+id/Pun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@android:color/black"
+        android:layout_above="@+id/Name"
+        android:layout_marginLeft="30sp"
+        android:layout_alignEnd="@+id/EdN"
+        android:layout_alignTop="@+id/Sel"
+        android:layout_toEndOf="@+id/Sel" />
+</RelativeLayout>
